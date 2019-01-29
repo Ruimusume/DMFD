@@ -7,4 +7,4 @@ Switch ドラゴン・マークト・フォー・デス SXOS チートコード<
 Switch Dragon Marked For Death SXOS Cheats</br>
 Switch 龙之死印 SXOS 金手指
 
-项目计划中 待产品发售
+HAC-P-AGBLA 项目计划中 待产品发售
