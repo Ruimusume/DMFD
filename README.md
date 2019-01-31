@@ -9,5 +9,5 @@ Switch 龙之死印 SXOS 金手指
 <img src="https://pbs.twimg.com/media/DyNAuvTUUAAPdQl.jpg" alt="Dragon Marked For Death"/>
 
 TID:010089700150E000</br>
-Ver.1.0.0 BID:e6d27d568f3ea9c8
+Ver.1.0.0 BID:e6d27d568f3ea9c8</br>
 Ver.1.1.0 BID:66d0494fb531f45f
