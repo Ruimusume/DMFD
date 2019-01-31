@@ -1,4 +1,4 @@
-# Switch Dragon Marked For Death SXOS Ver.1.0.0Cheats
+# Switch Dragon Marked For Death SXOS Ver.1.1.0Cheats
 by 露易娘 Ruimusume</br>
 日站博客：http://ruimusume.blog.jp/</br>
 微博：https://weibo.com/ruisan</br>
@@ -10,3 +10,4 @@ Switch 龙之死印 SXOS 金手指
 
 TID:010089700150E000</br>
 Ver.1.0.0 BID:e6d27d568f3ea9c8
+Ver.1.1.0 BID:66d0494fb531f45f
