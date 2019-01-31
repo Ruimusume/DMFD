@@ -8,5 +8,5 @@ Switch Dragon Marked For Death SXOS Cheats</br>
 Switch 龙之死印 SXOS 金手指
 <img src="https://pbs.twimg.com/media/DyNAuvTUUAAPdQl.jpg" alt="Dragon Marked For Death"/>
 
-TID:010089700150E000
+TID:010089700150E000</br>
 Ver.1.0.0 BID:e6d27d56f3ea9c8
