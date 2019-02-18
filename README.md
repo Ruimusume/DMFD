@@ -10,6 +10,7 @@ Switch 龙之死印/逝血龍痕 SXOS 金手指
 
 TID:010089700150E000</br>
 Ver.1.0.0 BID:e6d27d568f3ea9c8</br>
-Ver.1.1.0 BID:66d0494fb531f45f
+Ver.1.1.0 BID:66d0494fb531f45f</br>
+Ver.1.1.1 BID:
 
 Enter different maps,The corresponding object locations are also different.
