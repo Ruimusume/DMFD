@@ -36,7 +36,6 @@
 <li>装備効果「被ヘイト－○％」が正しく反映されていなかった不具合を修正しました。 </li>
 <li>オンラインのフリーマッチプレイでクエストを開始する時、攻略ルートや宝箱内のアイテムを組み替えるように修正しました。</li>
 </ul> <br>
- <br>
 <ul>
 <li class="tit">【Adjustments】 </li>
 <li>Time limits for the lowest difficulty level of each quest have been increased. </li>
