@@ -1,0 +1,586 @@
+@charset "utf-8";
+@import url(http://parts.blog.livedoor.jp/css/template_6thgen.css);
+/**
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSStylesheet;
+ :title "Rui";
+ :shortdesc "Design Template for livedoor Blog";
+ :created "2019-02-20";
+ :release [:revision "1.00"; :created "2019-02-20"];
+ :page <http://blogdesign.ldblog.jp/archives/18127022.html>;
+ :rights "LINE Corporation".
+*/
+
+
+/* 全体のレイアウト
+----------------------------------------------- */
+body {
+	background-color: #000;
+}
+#wrapper {
+	padding-top: 24px;
+}
+#container {
+	margin: 0 auto;
+	width: 1280px;
+}
+#content {
+	position: relative;
+}
+#main {
+	width: 1000px;
+}
+#sidebar {
+	width: 240px;
+}
+/* 1カラムレイアウトのとき */
+body.layout-1col #content {
+	background-color: #fff;
+}
+body.layout-1col #main {
+}
+body.layout-1col #main-inner {
+}
+body.layout-1col #sidebar {
+	background-color: #f8f8f8;
+	border-radius: 0 0 4px 4px;
+	padding: 20px 50px;
+}
+body.layout-1col #sidebar-inner {
+}
+body.layout-1col #sidebar .sidewrapper {
+	float: left;
+	padding: 20px 0;
+	margin: 0 10px;
+	width: 260px;
+}
+/* 2カラムレイアウトのとき */
+body.layout-2col #content {
+	background: url(http://parts.blog.livedoor.jp/img/usr/default_2012/common/bg_side.png) repeat-y #fff;
+}
+body.layout-2col #main {
+	width: 1000px;
+}
+body.layout-2col #main-inner {
+}
+body.layout-2col #sidebar {
+	padding: 20px;
+	width: 200px;
+}
+body.layout-2col #sidebar-inner {
+}
+/* 右サイドバー */
+body.layout-2col.sidebar-right #content {
+	background-position: 100% 0;
+}
+body.layout-2col.sidebar-right #main {
+	border-radius: 0 0 0 4px;
+	float: left;
+}
+body.layout-2col.sidebar-right #sidebar {
+	border-radius: 0 0 4px 0;
+	float: right;
+}
+/* 左サイドバー */
+body.layout-2col.sidebar-left #content {
+	background-position: 0 0;
+}
+body.layout-2col.sidebar-left #main {
+	border-radius: 0 0 4px 0;
+	float: right;
+}
+body.layout-2col.sidebar-left #sidebar {
+	border-radius: 0 0 0 4px;
+	float: left;
+}
+/* サイドバー入れ替え */
+body.sidebar-right #main {
+	float: left;
+}
+body.sidebar-right #sidebar {
+	float: right;
+}
+body.sidebar-left #main {
+	float: right;
+}
+body.sidebar-left #sidebar {
+	float: left;
+}
+/* 全体の文字色、リンク色
+----------------------------------------------- */
+body {
+	color: #000;
+	font: 14px/1.2 Microsoft YaHei, MS PGothic, Helvetica, Verdana, sans-serif;
+}
+a {
+	color: #e60010;
+	text-decoration: none;
+}
+a:link {
+	color: #e60010;
+	text-decoration: none;
+}
+a:visited {
+	color: #B3000E;
+}
+a:hover {
+	text-decoration: underline;
+	color: #00A1D6;
+}
+a:active {
+	color: #00A1D6;
+}
+/* ブログのヘッダー、タイトル、説明
+----------------------------------------------- */
+#blog-header {
+	position: relative;
+}
+#blog-header-inner {
+}
+#blog-header-image {
+	height: 400px;
+	width: 100%;
+	background-color: #287cba;
+	background-image: -webkit-linear-gradient(#57bef5 0%, #287cba 100%);
+	background-image: -moz-linear-gradient(#57bef5 0%, #287cba 100%);
+	background-image: -ms-linear-gradient(#57bef5 0%, #287cba 100%);
+	background-image: -o-linear-gradient(#57bef5 0%, #287cba 100%);
+	background-image: linear-gradient(#57bef5 0%, #287cba 100%);
+}
+#blog-title {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.2;
+	padding-bottom: 4px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+#blog-title a {
+	color: #fff;
+}
+#blog-description {
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.4;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+#blog-description a {
+	color: #fff;
+}
+/* かんたんタイトル画像 */
+#blog-header.show-image #blog-header-inner {
+	padding: 30px;
+}
+#blog-header.show-image #blog-header-image {
+	height: auto;
+	border-radius: 15px 15px 0 0;
+}
+#blog-header.hide-text #blog-header-inner, #blog-header.hide-text #blog-title, #blog-header.hide-text #blog-title a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+}
+#blog-header.hide-text #blog-header-image {
+	margin: 0;
+}
+#blog-header.hide-text #blog-title a {
+	background-color: #fff;
+	opacity: 0;
+	z-index: 10;
+	filter: alpha(opacity = 0);
+	-webkit-transition: opacity 0.1s linear;
+	-moz-transition: opacity 0.1s linear;
+	-ms-transition: opacity 0.1s linear;
+	-o-transition: opacity 0.1s linear;
+	transition: opacity 0.1s linear;
+}
+#blog-header.hide-text #blog-title a:hover {
+	opacity: 0.15;
+}
+/* メニューバー
+----------------------------------------------- */
+.ldb_menu {
+	position: relative;
+	z-index: 20;
+}
+.ldb_menu-list {
+	position: absolute;
+	bottom: 0;
+	background: url(http://parts.blog.livedoor.jp/img/usr/default_2012/common/opacity_w_60.png);
+	background: rgba(247,247,247,0.7);
+	zoom: 100%;
+	width: 940px;
+	margin: 0 auto;
+}
+.ldb_menu-list:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.ldb_menu-list li {
+	float: left;
+	list-style: none;
+}
+.ldb_menu-list li a {
+	padding: 18px;
+	line-height: 1.4;
+	display: block;
+	font-size: 15px;
+	color: #333;
+	text-decoration: none;
+}
+.ldb_menu-list .ldb_menu-item-current, .ldb_menu-list li a:hover {
+	background: #dbdbdb;
+	background: rgba(204,204,204,0.7);
+}
+/* メインカラム
+----------------------------------------------- */
+/* 記事全体 */
+
+.article {
+	border-bottom: 1px dashed #999;
+	border-top: 1px dashed #999;
+	margin-bottom: -1px;
+	padding: 20px 0;
+	position: relative;
+	left: 15px;
+}
+.article-inner {
+	height: 210px;
+	overflow: hidden;
+	position: relative;
+}
+.article-header, .article-body {
+	margin-left: 240px;
+}
+.article-first-image {
+	box-shadow: 0 0 3px black inset;
+	background-color: #f0f0f0;
+	background: url(http://livedoor.blogimg.jp/q5563961/imgs/6/c/6cb475aa.png);
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 210px;
+	width: 210px;
+	border-radius: 15px 15px 15px 15px;
+}
+.article-first-image a {
+	background-color: #fff;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.article-first-image img {
+	width: 210px;
+	height: 210px;
+	object-fit: cover;
+	display: inline;
+	border-radius: 15px 15px 15px 15px;
+}
+.article.first-article {
+	border-top: 0;
+}
+.article.last-article {
+	border-bottom: 0;
+}
+/* 記事ヘッダー、記事タイトル */
+.article-header {
+	margin-bottom: 15px;
+	position: relative;
+}
+.article-title {
+	margin-bottom: 5px;
+	max-height: 112px;
+	overflow: hidden;
+}
+.article-title a {
+	color: #e60010;
+	font-size: 16px;
+	font-weight: bold;
+}
+/* 日付 */
+.article-date {
+	color: #808080;
+	font-size: 12px;
+}
+/* 個別記事のみ */
+body.page-article .article {
+	border: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+body.page-article .article-title {
+	max-height: none;
+}
+body.page-article .article-header, body.page-article .article-body {
+	margin-left: 0;
+}
+body.page-article .article-header {
+	border-bottom: 1px dashed #999;
+	padding-bottom: 20px;
+}
+/* 記事フッター、カテゴリ、コメント、ソーシャルボタン */
+.article-footer {
+	border-bottom: 1px dashed #999;
+}
+.article-meta {
+}
+.article-social-btn {
+	border-bottom: 1px dashed #999;
+	top: 1px;
+	position: relative;
+	text-align: right;
+}
+/* 関連記事 */
+.article-body .related-articles {
+	border-bottom: 1px dashed #999;
+	border-top: 1px dashed #999;
+	margin-bottom: -1px;
+	padding: 10px 0;
+	position: relative;
+	margin: 2em 0;
+	line-height: 1.3
+}
+.article-body .related-articles h3 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.article-body .related-articles ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.article-body .related-articles ul li {
+	margin: 4px 0;
+	padding-left: 16px;
+}
+/* 続きを読む */
+.article-continue a {
+	color: #333;
+}
+/* 共通テーマ */
+dl.common-theme {
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 8px 12px;
+}
+/* メッセージボード */
+.message-board {
+	margin-left: 15px;
+	background-color: #f7f7f7;
+	border: 1px solid #e4e7e8;
+	border-radius: 4px;
+	color: #333;
+	line-height: 1.6;
+	overflow: hidden;
+	margin-bottom: 26px;
+	padding: 15px;
+}
+/* プライベートモード、コメントにログインが必要な場合のメッセージ */
+div.private-mode-announcement, div.comment-auth-announcement {
+	background-color: #fafafa;
+	border: 1px solid #ddd;
+}
+/* 記事本文
+----------------------------------------------- */
+.article-body {
+	color: rgb(60, 60, 60);
+	font-size: 14px;
+	line-height: 2;
+}
+.article-body-inner h1, .article-body-inner h2, .article-body-inner h3 {
+	border-bottom: 3px solid #7f7f7f;
+}
+.article-body-inner h4 {
+	border-bottom: 1px solid #ccc;
+	background: linear-gradient(transparent 70%, #87cefa 70%);
+}
+.article-body-inner blockquote {
+	background-color: #fafafa;
+	border: 1px solid #fff;
+}
+.article-body-inner blockquote:before {
+	color: #ddd;
+}
+.article-body-inner img.pict {
+	box-shadow: 0px 0px 3px rgb(0, 0, 10);
+}
+/* コメント・トラックバック一覧
+----------------------------------------------- */
+.comment-date, .ping-blog-name, .ping-date {
+	border-left: 1px solid #aaa;
+	color: #aaa;
+}
+.comment-body {
+	margin-left: 16px;
+	color: #666;
+}
+.ping-excerpt {
+	color: #666;
+	margin-left: 16px;
+}
+/* ページ送り
+----------------------------------------------- */
+/* トップページ */
+ul.index-navigator li a, ul.index-navigator li.current span {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #555;
+}
+ul.index-navigator li.current span {
+	background-color: #e60010;
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+ul.index-navigator a:hover {
+	background-color: #eee;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+}
+ul.index-navigator a:visited {
+	color: #555;
+}
+/* 記事ページ、月別アーカイブページ */
+ul.article-pager li a, ul.archives-pager li a {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #555;
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+	color: #555;
+}
+/* ブログのフッター
+----------------------------------------------- */
+#blog-footer {
+	color: #555;
+	padding: 40px;
+}
+#blog-footer a {
+	color: #555;
+}
+/* ブログパーツ
+----------------------------------------------- */
+/* 共通 */
+.sidewrapper:first-child {
+	padding-top: 0;
+}
+.sidewrapper {
+	border-bottom: 1px solid #fcfcfc;
+	font-size: 12px;
+	overflow: hidden;
+	padding: 20px 0;
+	position: relative;
+}
+.sidewrapper:after {
+	border-bottom: 1px solid #d8d8d8;
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.sidewrapper .sidetitle {
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 0.7em;
+}
+.sidewrapper .sidetitle a {
+	color: #333;
+}
+.sidewrapper .side .sidebody {
+	line-height: 1.5;
+	padding: 4px 0;
+	border-bottom: 1px dashed #999;
+}
+.sidewrapper .side .sidebody:last-child {
+	border-bottom: 0;
+}
+.sidewrapper .side .sidebody.category-child {
+	padding-left: 12px;
+}
+/* カレンダー */
+.calendarhead {
+	font-weight: bold;
+	text-align: center;
+}
+table.caltblwk .weekday {
+	color: #666;
+}
+table.caltblwk .sun {
+	color: #ff5d5d;
+}
+table.caltblwk .sat {
+	color: #578efa;
+}
+table.caltblday {
+	color: #8d8d8d;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+table.caltblday .caloff {
+	background-color: #fff;
+}
+table.caltblday .calon {
+	background-color: #000;
+	border: none;
+}
+table.caltblday td a {
+	color: #fff;
+	height: 23px;
+	line-height: 23px;
+}
+table.caltblday td a:hover {
+	background-color: #e60010;
+}
+table.caltblday td a:visited {
+	background-color: #c8a7dd;
+}
+ul.galleryThumbnail li {
+	display: inline-block;
+}
+/* その他のパーツ
+----------------------------------------------- */
+/* アーカイブヘッダ */
+.archives-header {
+	background: #fafafa;
+	border-left: 5px solid #2e90c5;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	color: #333;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px;
+}
+/* 記事下広告 */
+#ad2 {
+}
+#ad2 a.addescription {
+	color: #666;
+}
+/* ページトップへ */
+.to-pagetop a {
+	background: url(http://parts.blog.livedoor.jp/img/usr/default_2012/common/to_pagetop.png) 0 0 no-repeat;
+	display: block;
+	width: 70px;
+	height: 70px;
+	text-indent: -9999px;
+	outline: 0;
+	opacity: 0.6;
+	-webkit-transition: opacity linear 0.1s;
+	-moz-transition: opacity linear 0.1s;
+	-ms-transition: opacity linear 0.1s;
+	-o-transition: opacity linear 0.1s;
+	transition: opacity linear 0.1s;
+}
+.to-pagetop a:hover {
+	opacity: 0.9;
+}
