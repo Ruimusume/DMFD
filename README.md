@@ -1,4 +1,4 @@
-# Switch Dragon Marked For Death SXOS Ver.1.1.1 Cheats Method
+# Switch Dragon Marked For Death SXOS Ver.1.1.1 修改方法 正版通用
 by 露易娘 Ruimusume</br>
 日站博客：http://ruimusume.blog.jp/</br>
 微博：https://weibo.com/ruisan</br>
