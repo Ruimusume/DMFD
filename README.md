@@ -11,9 +11,6 @@ However, you can use the tool to find the address of the item for modification.<
 因为同一个界面地方每次进入后他的地址都不一样，也没法通过计算找出准确的指针</br>
 但是可以通过工具找到对应位置即时修改并且永久保存</br>
 
-Switch ドラゴン・マークト・フォー・デス SXOS チートコード</br>
-Switch Dragon Marked For Death SXOS Cheats</br>
-Switch 龙之死印/逝血龍痕 SXOS 金手指
 <img src="https://i.imgur.com/dyaqIab.jpg" alt="Dragon Marked For Death"/>
 
 TID:010089700150E000</br>
