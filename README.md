@@ -13,11 +13,6 @@ However, you can use the tool to find the address of the item for modification.<
 
 <img src="https://i.imgur.com/dyaqIab.jpg" alt="Dragon Marked For Death"/>
 
-TID:010089700150E000</br>
-Ver.1.0.0 BID:e6d27d568f3ea9c8</br>
-Ver.1.1.0 BID:66d0494fb531f45f</br>
-Ver.1.1.1 BID:e4114eb197e80ca8</br>
-
 为什么叫修改方法呢？</br>
 这个游戏我暂时没法找到有效的金手指代码去使用或修改</br>
 因为同一个界面地方每次进入后他的地址都不一样，也没法通过计算找出准确的指针</br>
