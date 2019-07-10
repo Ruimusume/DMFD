@@ -3,6 +3,9 @@ by 露易娘 Ruimusume</br>
 日站博客：http://ruimusume.blog.jp/</br>
 微博：https://weibo.com/ruisan</br>
 
+TID:010089700150E000</br>
+BID:e22ee1b82e5b8835
+
 This game，I can't cheat right now.</br>
 Because every time you enter the same item, the address is different.</br>
 However, you can use the tool to find the address of the item for modification.</br>
