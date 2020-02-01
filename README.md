@@ -1,6 +1,6 @@
 # Switch Dragon Marked For Death SXOS Ver.2.1.1 修改方法&金手指 正版通用
 by 露易娘 Ruimusume</br>
-日站博客：http://ruimusume.blog.jp/</br>
+日站博客：http://ruisan.blog.jp/</br>
 微博：https://weibo.com/ruisan</br>
 
 TID:010089700150E000</br>
