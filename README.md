@@ -1,4 +1,4 @@
-# Switch Dragon Marked For Death SXOS Ver.3.1.4 修改方法&金手指 正版通用
+# Switch Dragon Marked For Death SXOS Ver.3.1.5 修改方法&金手指 正版通用
 by 露易娘 Ruimusume</br>
 日站博客：http://ruisan.blog.jp/</br>
 微博：https://weibo.com/ruisan</br>
