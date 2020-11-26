@@ -4,7 +4,7 @@ by 露易娘 Ruimusume</br>
 微博：https://weibo.com/ruisan</br>
 
 TID:010089700150E000</br>
-BID:af0928cc1c6af82c
+BID:84e35019a8a38f67
 
 <img src="https://i.imgur.com/dyaqIab.jpg" alt="Dragon Marked For Death"/>
 以下为属性值永久修改方法
